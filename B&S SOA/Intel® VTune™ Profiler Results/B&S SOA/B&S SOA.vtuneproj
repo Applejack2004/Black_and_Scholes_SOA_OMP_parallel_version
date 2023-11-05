@@ -286,12 +286,32 @@
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Debug</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Release</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">2</category>
     <searchDirectory>
      <name>C:\Users\4885226\source\repos\B&amp;S SOA</name>
      <recursive type="bool">true</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Debug</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Release</name>
+     <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
    </searchCategory>
@@ -378,8 +398,8 @@
      <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
       <workload>
        <targetName>launch</targetName>
-       <launch_app.app_to_launch>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Debug\B&amp;S SOA.exe</launch_app.app_to_launch>
-       <launch_app.app_parameters></launch_app.app_parameters>
+       <launch_app.app_to_launch>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Release\B&amp;S SOA.exe</launch_app.app_to_launch>
+       <launch_app.app_parameters>240000000</launch_app.app_parameters>
        <launch_app.environment></launch_app.environment>
        <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
        <launch_app.working_folder>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\</launch_app.working_folder>
