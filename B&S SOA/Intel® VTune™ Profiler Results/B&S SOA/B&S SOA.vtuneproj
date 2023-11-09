@@ -399,7 +399,7 @@
       <workload>
        <targetName>launch</targetName>
        <launch_app.app_to_launch>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Release\B&amp;S SOA.exe</launch_app.app_to_launch>
-       <launch_app.app_parameters>240000000</launch_app.app_parameters>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
        <launch_app.environment></launch_app.environment>
        <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
        <launch_app.working_folder>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\</launch_app.working_folder>
