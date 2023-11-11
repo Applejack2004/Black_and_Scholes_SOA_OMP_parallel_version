@@ -1,7 +1,7 @@
 #include<iostream>
 #include"Option.h"
 #include <chrono>
-int N;
+int N = 0;;
 float price = 0.0f;
 
 
