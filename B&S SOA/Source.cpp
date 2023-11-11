@@ -30,6 +30,6 @@ int main(int argc, char* argv[])
 	std::cout << " The option price has been calculated!" << std::endl;
 	price = Obj.Get_out_price();
 	std::cout << "Fair option price =" << price << "$"<<std::endl;
-	std::cout << "Elapsed time:" << time << std::endl;
+	std::cout << "Elapsed time:" << time <<"ms" << std::endl;
 
 }
