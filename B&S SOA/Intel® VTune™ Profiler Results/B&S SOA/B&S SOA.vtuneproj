@@ -296,6 +296,11 @@
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.1\windows\bin\Intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">2</category>
@@ -382,6 +387,26 @@
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\Program Files (x86)\Intel\oneAPI\tbb\2021.10.0\include</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\Program Files (x86)\Intel\oneAPI\ipp\2021.9.0\include</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.1\windows\compiler\include</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.1\windows\include</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">4</category>
@@ -400,7 +425,13 @@
        <targetName>launch</targetName>
        <launch_app.app_to_launch>C:\Users\4885226\source\repos\B&amp;S SOA\x64\Release\B&amp;S SOA.exe</launch_app.app_to_launch>
        <launch_app.app_parameters>100000000</launch_app.app_parameters>
-       <launch_app.environment></launch_app.environment>
+       <launch_app.environment>TBB_DLL_PATH=C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\..\..\..\tbb\latest\redist\intel64\vc14&#13;
+OCL_ICD_FILENAMES=C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\x64\intelocl64_emu.dll;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\x64\intelocl64.dll;&#13;
+INTELFPGAOCLSDKROOT=C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\..\&#13;
+PATH=C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.1\windows\redist\intel64_win\compiler;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\ocloc;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\bin\intel64;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\redist\intel64_win\compiler;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\oclfpga\host\windows64\bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\oclfpga\llvm\aocl-bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\oclfpga\windows64\bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\lib\oclfpga\bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2023.2.0\windows\..\..\..\tbb\latest\redist\intel64\vc14;%PATH%</launch_app.environment>
        <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
        <launch_app.working_folder>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\</launch_app.working_folder>
        <launch.userappworkdir>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\</launch.userappworkdir>
@@ -505,7 +536,7 @@
    </workloads>
   </target_settings>
   <analysis_type_settings>
-   <selected_analysis_type_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\hotspots.cfg</selected_analysis_type_path>
+   <selected_analysis_type_path>C:\Program Files (x86)\Intel\oneAPI\vtune\2023.2.0\config\analysis_type\hotspots.cfg</selected_analysis_type_path>
    <localhost>
     <launch>
      <at_start_point>
@@ -547,6 +578,309 @@
      </at_start_point>
      <at_start_point>
       <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\hotspots.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>allowedViewpoints</id>
+        <value>%HotspotsByCPUUsageViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>enableCharacterizationInsights</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>enableStackCollect</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>goodFastFrameThreshold</id>
+        <value type="double">100</value>
+       </contextValue>
+       <contextValue>
+        <id>groupForCustomControl</id>
+        <value type="null"></value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%HotspotsByCPUUsageViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingInterval</id>
+        <value type="double">1</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingMode</id>
+        <value>sw</value>
+       </contextValue>
+       <contextValue>
+        <id>slowGoodFrameThreshold</id>
+        <value type="double">40</value>
+       </contextValue>
+       <contextValue>
+        <id>stackSizeCollect</id>
+        <value>0</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\pt_analysis.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>UIMaxRegionDuration</id>
+        <value type="double">100</value>
+       </contextValue>
+       <contextValue>
+        <id>UIiptRegionsToLoad</id>
+        <value type="s32_t">100</value>
+       </contextValue>
+       <contextValue>
+        <id>forceLoopAndFunctionMode</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%HotspotsPtViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>ringBuffer</id>
+        <value type="s32_t">0</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\microarchitecture_exploration.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>allowedViewpoints</id>
+        <value>%SNBGeneralExplorationViewpointName,%SNBBandwidthViewpointName,%PMUEventsViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>collectBadSpeculation</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>collectCoreBound</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>collectFrontendBound</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>collectMemoryBW</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>collectMemoryBound</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>collectRetiring</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>dramBandwidthLimitsAT</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>enableStackCollect</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>groupForSelectMetrics</id>
+        <value type="null"></value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%SNBGeneralExplorationViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>pmuSamplingCountSwitch</id>
+        <value>detailed</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingInterval</id>
+        <value type="double">1</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\memory_access.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>allowedViewpoints</id>
+        <value>%SNBBandwidthViewpointName,%SNBGeneralExplorationViewpointName,%HotspotsByCPUUsageViewpointName,%PMUEventsViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>analyzeCAT</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>analyzeCacheOccupancy</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>analyzeL3ExternalBW</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>analyzeMemoryObjects</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>analyzeOpenMPRegions</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>dramBandwidthLimitsAT</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>enableMemoryObjectGrouper</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%SNBBandwidthViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>memoryObjectMinSize</id>
+        <value type="s32_t">1024</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingInterval</id>
+        <value type="double">1</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\hpc-characterization.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>allowedViewpoints</id>
+        <value>%OpenMPHotspotsViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>analyzeOpenMPRegions</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>collectAffinity</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>collectMemoryBW</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>collectMpiTracingData</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>collectParallelFs</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>dramBandwidthLimitsAT</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>enableStackCollect</id>
+        <value type="bool">false</value>
+       </contextValue>
+       <contextValue>
+        <id>groupForCustomControl</id>
+        <value type="null"></value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%OpenMPHotspotsViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingInterval</id>
+        <value type="double">1</value>
+       </contextValue>
+       <contextValue>
+        <id>stackSizeCollect</id>
+        <value>0</value>
+       </contextValue>
+       <contextValue>
+        <id>targetGPUAtk</id>
+        <value>none</value>
+       </contextValue>
+       <contextValue>
+        <id>useHPCCPUUtilizationThresholds</id>
+        <value type="bool">true</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\latest\config\analysis_type\threading_analysis.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>allowedViewpoints</id>
+        <value>%ThreadingEfficiencyViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>enableStackCollect</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>groupForCustomControl</id>
+        <value type="null"></value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%ThreadingEfficiencyViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingAndWaits</id>
+        <value>sw</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingInterval</id>
+        <value type="double">1</value>
+       </contextValue>
+       <contextValue>
+        <id>stackSizeCollect</id>
+        <value>0</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\2023.2.0\config\analysis_type\threading_analysis.cfg</at_path>
+      <knob_values>
+       <contextValue>
+        <id>allowedViewpoints</id>
+        <value>%ThreadingEfficiencyViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>enableStackCollect</id>
+        <value type="bool">true</value>
+       </contextValue>
+       <contextValue>
+        <id>groupForCustomControl</id>
+        <value type="null"></value>
+       </contextValue>
+       <contextValue>
+        <id>initialViewpoint</id>
+        <value>%ThreadingEfficiencyViewpointName</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingAndWaits</id>
+        <value>sw</value>
+       </contextValue>
+       <contextValue>
+        <id>samplingInterval</id>
+        <value type="double">1</value>
+       </contextValue>
+       <contextValue>
+        <id>stackSizeCollect</id>
+        <value>0</value>
+       </contextValue>
+      </knob_values>
+     </at_start_point>
+     <at_start_point>
+      <at_path>C:\Program Files (x86)\Intel\oneAPI\vtune\2023.2.0\config\analysis_type\hotspots.cfg</at_path>
       <knob_values>
        <contextValue>
         <id>allowedViewpoints</id>
