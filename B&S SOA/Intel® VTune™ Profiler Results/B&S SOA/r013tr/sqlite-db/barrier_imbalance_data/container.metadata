@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bag xmlns:unsignedLong="http://www.w3.org/2001/XMLSchema#unsignedLong">
+ <entry path="start_tsc" unsignedLong:size="6">
+  <indexFields>
+   <field path="dd_process"/>
+  </indexFields>
+  <int64Fields>
+   <field path="count"/>
+   <field path="end_tsc"/>
+  </int64Fields>
+  <doubleFields/>
+ </entry>
+</bag>

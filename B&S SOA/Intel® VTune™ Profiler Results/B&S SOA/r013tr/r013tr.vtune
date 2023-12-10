@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1700734784</timestamp>
+  <hostname>LAPTOP-9UKM10MR</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Profiler 2023.2.0</product>
+  <buildNumber type="s32_t">626047</buildNumber>
+  <logicalCPUCount type="s32_t">12</logicalCPUCount>
+  <physicalCoreCount type="s32_t">6</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">2096000000</CPUFrequency>
+  <CPUFamily type="s32_t">23</CPUFamily>
+  <CPUModel type="s32_t">104</CPUModel>
+  <CPUStepping type="s32_t">1</CPUStepping>
+  <CPUBrandName>AMD Ryzen 5 5500U with Radeon Graphics         </CPUBrandName>
+  <isa>avx2</isa>
+  <collectionTimeBegin type="u64_t">1700734785</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1700734789</collectionTimeEnd>
+  <variables>
+   <at>tr</at>
+  </variables>
+ </rdmgr>
+</root>
