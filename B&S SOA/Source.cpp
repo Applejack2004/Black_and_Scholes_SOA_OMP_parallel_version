@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 		}
 		N = std::atoi(argv[1]);
 	}
-	/*std::cout << "Enter the number of shares:" << std::endl;
+	/*std::cout << "Enter the number of shares:" << std::endl;...
 	std::cin >> N;*/
 	Option Obj(N);
 	Obj.random_datas();

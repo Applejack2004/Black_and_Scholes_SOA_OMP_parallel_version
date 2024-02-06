@@ -1,5 +1,6 @@
 #pragma once
 #include <cmath>
+#include <vector>
 #include <random>
 #include <omp.h>
 #include <iostream>
@@ -7,10 +8,10 @@ class Option
 {
 private:
 	int N;
-	float* T;//время
-	float* S0;//начальная цена акции
-	float* K;// цена исполнения или страйк
-	float* C;//цена опциона
+	std::vector<float> T;//время
+	std::vector<float> S0;//начальная цена акции
+	std::vector<float> K;// цена исполнения или страйк
+	std::vector<float> C;//цена опциона
 public:
 
 	const float Volatility = 0.2f;
@@ -18,55 +19,44 @@ public:
 	Option()
 	{
 		N = 10;
-		T = new float[N];
-		K = new float[N];
-		C = new float[N];
-		S0 = new float[N];
+
 #pragma omp parallel num_threads(12)
 		{
 #pragma omp for simd
 			for (int i = 0; i < N; i++)
 			{
-				T[i] = 0.0f;
-				K[i] = 0.0f;
-				C[i] = 0.0f;
-				S0[i] = 0.0f;
+				T.push_back(0.0f);
+				K.push_back(0.0f);
+				C.push_back(0.0f);
+				S0.push_back(0.0f);
 			}
 		}
 
 	}
-	~Option()
-	{
-		delete[] T;
-		delete[] K;
-		delete[] C;
-		delete[] S0;
-	}
+
 	Option(int _N)
 	{
 		N = _N;
-		T = new float[N];
-		K = new float[N];
-		C = new float[N];
-		S0 = new float[N];
+		T.reserve(N);
+		K.reserve(N);
+		C.reserve(N);
+		S0.reserve(N);
 #pragma omp parallel num_threads(12)
 		{
 #pragma omp for simd
 			for (int i = 0; i < N; i++)
 			{
-				T[i] = 0.0f;
-				K[i] = 0.0f;
-				C[i] = 0.0f;
-				S0[i] = 0.0f;
+				T.push_back(0.0f);
+				K.push_back(0.0f);
+				C.push_back(0.0f);
+				S0.push_back(0.0f);
 			}
 		}
+
+
 	}
 	void random_datas()
 	{
-		
-		//std::default_random_engine rd(0);//генератор случайных чисел
-		//std::uniform_real_distribution<float> dist1(10.0f, 100.0f);
-		//std::uniform_real_distribution<float> dist2(5.0f, 30.0f);
 #pragma omp parallel num_threads(12)
 		{
 			std::default_random_engine rd(0);//генератор случайных чисел

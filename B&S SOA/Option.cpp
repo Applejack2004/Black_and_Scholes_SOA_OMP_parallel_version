@@ -1,5 +1,5 @@
 #include "Option.h"
-
+#include <cmath>
 void Option::Get_option_price()
 {
  #pragma omp parallel num_threads(12)
