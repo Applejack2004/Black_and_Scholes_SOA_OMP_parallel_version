@@ -2,7 +2,7 @@
 
 void Option::Get_option_price()
 {
- #pragma omp parallel num_threads(12)
+ #pragma omp parallel 
 	{
 #pragma omp for simd 
 		for (int i = 0; i < N; i++)

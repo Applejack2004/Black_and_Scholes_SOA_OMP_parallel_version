@@ -7,20 +7,28 @@ float price = 0.0f;
 
 int main(int argc, char* argv[])
 {
-	if (argc == 1)
-	{
-		std::cout << "no arguments!" << std::endl;
+    setlocale(LC_ALL, "RUS");
+    if (argc == 1)
+    {
+	   std::cout << "no arguments!" << std::endl;
 	}
 	else
 	{
 		for (int i = 0; i < argc; i++)
 		{
-			std::cout << argv[i]<<" ";
+			std::cout << argv[i] << std::endl;
 		}
 		N = std::atoi(argv[1]);
 	}
-	/*std::cout << "Enter the number of shares:" << std::endl;
-	std::cin >> N;*/
+	const char* num_threads_str = std::getenv("OMP_NUM_THREADS");//возвращает указатель на переменную окружения.
+	int num_threads;
+	if (num_threads_str != nullptr) {
+		num_threads = std::atoi(num_threads_str);
+		std::cout << "Значение переменной окружения OMP_NUM_THREADS: " << num_threads << std::endl;
+	}
+	else {
+		std::cout << "Переменная окружения OMP_NUM_THREADS не установлена" << std::endl;
+	}
 	Option Obj(N);
 	Obj.random_datas();
 	const std::chrono::time_point<std::chrono::system_clock> t1 = std::chrono::system_clock::now();

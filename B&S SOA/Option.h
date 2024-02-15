@@ -22,7 +22,7 @@ public:
 		K = new float[N];
 		C = new float[N];
 		S0 = new float[N];
-#pragma omp parallel num_threads(12)
+#pragma omp parallel 
 		{
 #pragma omp for simd
 			for (int i = 0; i < N; i++)
@@ -49,7 +49,7 @@ public:
 		K = new float[N];
 		C = new float[N];
 		S0 = new float[N];
-#pragma omp parallel num_threads(12)
+#pragma omp parallel
 		{
 #pragma omp for simd
 			for (int i = 0; i < N; i++)
@@ -67,7 +67,7 @@ public:
 		//std::default_random_engine rd(0);//генератор случайных чисел
 		//std::uniform_real_distribution<float> dist1(10.0f, 100.0f);
 		//std::uniform_real_distribution<float> dist2(5.0f, 30.0f);
-#pragma omp parallel num_threads(12)
+#pragma omp parallel
 		{
 			std::default_random_engine rd(0);//генератор случайных чисел
 			std::uniform_real_distribution<float> dist1(10.0f, 100.0f);
@@ -88,7 +88,7 @@ public:
 	float Get_out_price()
 	{
 		float price = 0.0f;
-#pragma omp parallel num_threads(12)
+#pragma omp parallel 
 		{
 #pragma omp for simd reduction(+:price)//потоки мешать не будут, каждый поток работает со своей копией price
 		
