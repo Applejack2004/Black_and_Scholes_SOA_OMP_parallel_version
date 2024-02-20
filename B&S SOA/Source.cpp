@@ -35,9 +35,9 @@ int main(int argc, char* argv[])
 	Obj.Get_option_price();
 	const std::chrono::time_point<std::chrono::system_clock> t2 = std::chrono::system_clock::now();
 	auto time = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
-	std::cout << " The option price has been calculated!" << std::endl;
+	std::cout << " Цена опциона вычислена!" << std::endl;
 	price = Obj.Get_out_price();
-	std::cout << "Fair option price =" << price << "$"<<std::endl;
-	std::cout << "Elapsed time:" << time <<"ms" << std::endl;
-
+	std::cout << "Справедливая цена опциона = " << price << "$" << std::endl;
+	std::cout << "На вычисление затрачено:" << time << " ms" << std::endl;
+	
 }
