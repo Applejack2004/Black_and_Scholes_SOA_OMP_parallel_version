@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
  <cli_project type="bool">true</cli_project>
+ <connectionOption>localhost</connectionOption>
  <rdmgr>
   <timestamp type="u64_t">1699625178</timestamp>
   <hostname>LAPTOP-9UKM10MR</hostname>
@@ -18,137 +19,6 @@
   <isa>avx2</isa>
  </rdmgr>
  <All_Configurations-All_Platforms>
-  <target_settings>
-   <workloads>
-    <localhost>
-     <release type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
-      <workload>
-       <targetName>release</targetName>
-       <launch_app.working_folder>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\B&amp;S SOA\</launch_app.working_folder>
-       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14&#13;
-OCL_ICD_FILENAMES=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64.dll&#13;
-INTELFPGAOCLSDKROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga&#13;
-INTEL_TARGET_ARCH=intel64&#13;
-INTEL_TARGET_PLATFORM=windows&#13;
-CMPLR_ROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\&#13;
-PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\ocloc;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin\\intel64;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\host\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\llvm\\aocl-bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14;%PATH%&#13;
-&#13;
-    &#13;
-    &#13;
-    &#13;
-    &#13;
-    &#13;
-    &#13;
-    </launch_app.environment>
-       <launch_app.app_to_launch>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release\\B&amp;S SOA.exe</launch_app.app_to_launch>
-       <launch_app.app_parameters>100000000</launch_app.app_parameters>
-       <context>
-        <contextValue>
-         <id>auto_finalize</id>
-         <value type="bool">true</value>
-        </contextValue>
-        <contextValue>
-         <id>dataLimit</id>
-         <value type="s32_t">500</value>
-        </contextValue>
-        <contextValue>
-         <id>gpuSamplingInterval</id>
-         <value type="double">1</value>
-        </contextValue>
-        <contextValue>
-         <id>gpu_conditional_metrics</id>
-         <value type="bool">false</value>
-        </contextValue>
-        <contextValue>
-         <id>gpu_profiling</id>
-         <value type="bool">false</value>
-        </contextValue>
-        <contextValue>
-         <id>interval</id>
-         <value type="s32_t">10</value>
-        </contextValue>
-        <contextValue>
-         <id>keepCaches</id>
-         <value>clear</value>
-        </contextValue>
-        <contextValue>
-         <id>kernel_filter</id>
-         <value>*</value>
-        </contextValue>
-        <contextValue>
-         <id>mklUserMode</id>
-         <value type="bool">true</value>
-        </contextValue>
-        <contextValue>
-         <id>modules_switch</id>
-         <value>knob.modules_switch.exclude</value>
-        </contextValue>
-        <contextValue>
-         <id>mrte_mode</id>
-         <value>auto</value>
-        </contextValue>
-        <contextValue>
-         <id>openclSourceAsm</id>
-         <value type="bool">true</value>
-        </contextValue>
-        <contextValue>
-         <id>process_for_analysis</id>
-         <value></value>
-        </contextValue>
-        <contextValue>
-         <id>profilePython</id>
-         <value type="bool">false</value>
-        </contextValue>
-        <contextValue>
-         <id>profile_intel_perf_libs</id>
-         <value type="bool">true</value>
-        </contextValue>
-        <contextValue>
-         <id>show_report</id>
-         <value type="bool">true</value>
-        </contextValue>
-        <contextValue>
-         <id>spillAnalysis</id>
-         <value type="bool">false</value>
-        </contextValue>
-        <contextValue>
-         <id>stackStitching</id>
-         <value type="bool">true</value>
-        </contextValue>
-        <contextValue>
-         <id>stackUnwindLimit</id>
-         <value type="s32_t">8388608</value>
-        </contextValue>
-        <contextValue>
-         <id>stackwalk</id>
-         <value>offline</value>
-        </contextValue>
-        <contextValue>
-         <id>static_instruction_mix</id>
-         <value type="bool">false</value>
-        </contextValue>
-        <contextValue>
-         <id>support_multi_isa_binaries</id>
-         <value type="bool">false</value>
-        </contextValue>
-        <contextValue>
-         <id>targetGPU</id>
-         <value>none</value>
-        </contextValue>
-        <contextValue>
-         <id>targetType</id>
-         <value>release</value>
-        </contextValue>
-        <contextValue>
-         <id>type_opt</id>
-         <value>cpu:stack</value>
-        </contextValue>
-       </context>
-      </workload>
-     </release>
-    </localhost>
-   </workloads>
-  </target_settings>
   <searchDirs>
    <searchCategory>
     <category type="u8_t">1</category>
@@ -427,6 +297,46 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\PuTTY\</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\CMake\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">2</category>
@@ -439,6 +349,11 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist
      <name>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</name>
      <recursive type="bool">true</recursive>
      <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Users\\4885226\\AppData\\Local\\Temp\\SymbolCache</name>
+     <recursive type="bool">true</recursive>
+     <priority type="bool">true</priority>
     </searchDirectory>
    </searchCategory>
    <searchCategory>
@@ -528,10 +443,1336 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\atlmfc\\src\\atl</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\crt\\src</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Source\\10.0.22621.0\\ucrt</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\atlmfc\\include</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">4</category>
    </searchCategory>
   </searchDirs>
+  <target_settings>
+   <workloads>
+    <localhost>
+     <debug type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>debug</targetName>
+       <result_directory.path>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\r@@@{at}</result_directory.path>
+       <use_app_dir_as_work_dir type="bool">true</use_app_dir_as_work_dir>
+       <launch_app.app_to_launch>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release\\B&amp;S SOA.exe</launch_app.app_to_launch>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.working_folder>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\B&amp;S SOA\</launch_app.working_folder>
+       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14&#13;
+OCL_ICD_FILENAMES=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64.dll&#13;
+INTELFPGAOCLSDKROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\&#13;
+PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\ocloc;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin\\intel64;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\host\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\llvm\\aocl-bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14;%PATH%&#13;
+OMP_NUM_THREADS=12&#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    </launch_app.environment>
+       <search_directories>
+        <item>
+         <value>sym=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>sym:rp=C:\\Users\\4885226\\AppData\\Local\\Temp\\SymbolCache</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\bin\\Intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\intel64\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\ia32\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\intel64_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\ia32_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310\\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Git\\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\AppData\\Local\\Microsoft\\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\PuTTY</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>analysis_mode</id>
+         <value>default</value>
+        </contextValue>
+        <contextValue>
+         <id>instance_of_interest</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>loop_call_count_limit</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>loops</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mark-up-list</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>markup</id>
+         <value>gpu_generic</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>reduction_filtering</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>scope_filtering</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>select</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>stack_offset</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>suppressions</id>
+         <value>none</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>debug</value>
+        </contextValue>
+        <contextValue>
+         <id>vsdbg_support</id>
+         <value>off</value>
+        </contextValue>
+       </context>
+      </workload>
+     </debug>
+     <map type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>map</targetName>
+       <result_directory.path>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\r@@@{at}</result_directory.path>
+       <use_app_dir_as_work_dir type="bool">true</use_app_dir_as_work_dir>
+       <launch_app.app_to_launch>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release\\B&amp;S SOA.exe</launch_app.app_to_launch>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.working_folder>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\B&amp;S SOA\</launch_app.working_folder>
+       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14&#13;
+OCL_ICD_FILENAMES=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64.dll&#13;
+INTELFPGAOCLSDKROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\&#13;
+PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\ocloc;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin\\intel64;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\host\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\llvm\\aocl-bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14;%PATH%&#13;
+OMP_NUM_THREADS=12&#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    </launch_app.environment>
+       <search_directories>
+        <item>
+         <value>sym=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>sym:rp=C:\\Users\\4885226\\AppData\\Local\\Temp\\SymbolCache</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\bin\\Intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\intel64\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\ia32\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\intel64_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\ia32_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310\\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Git\\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\AppData\\Local\\Microsoft\\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\PuTTY</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>cachesimAssociativity</id>
+         <value>8</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesimSets</id>
+         <value>4096</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesim_cacheline_size</id>
+         <value>64</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesim_mode</id>
+         <value>utilization</value>
+        </contextValue>
+        <contextValue>
+         <id>enableCacheSimulation</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>instance_of_interest</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>loop_call_count_limit</id>
+         <value type="s32_t">0</value>
+        </contextValue>
+        <contextValue>
+         <id>loops</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mark-up-list</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>recordHeapMemory</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>recordStackFrame</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>select</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>suppressions</id>
+         <value>none</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>map</value>
+        </contextValue>
+       </context>
+      </workload>
+     </map>
+     <release type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>release</targetName>
+       <launch_app.working_folder>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\B&amp;S SOA\</launch_app.working_folder>
+       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14&#13;
+OCL_ICD_FILENAMES=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64.dll&#13;
+INTELFPGAOCLSDKROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\&#13;
+PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\ocloc;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin\\intel64;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\host\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\llvm\\aocl-bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14;%PATH%&#13;
+OMP_NUM_THREADS=12&#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    </launch_app.environment>
+       <launch_app.app_to_launch>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release\\B&amp;S SOA.exe</launch_app.app_to_launch>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <search_directories>
+        <item>
+         <value>sym=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>sym:rp=C:\\Users\\4885226\\AppData\\Local\\Temp\\SymbolCache</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\bin\\Intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\intel64\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\ia32\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\intel64_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\ia32_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310\\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Git\\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\AppData\\Local\\Microsoft\\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\PuTTY</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>auto_finalize</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>gpuSamplingInterval</id>
+         <value type="double">1</value>
+        </contextValue>
+        <contextValue>
+         <id>gpu_conditional_metrics</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>gpu_profiling</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>interval</id>
+         <value type="s32_t">10</value>
+        </contextValue>
+        <contextValue>
+         <id>keepCaches</id>
+         <value>clear</value>
+        </contextValue>
+        <contextValue>
+         <id>kernel_filter</id>
+         <value>*</value>
+        </contextValue>
+        <contextValue>
+         <id>mklUserMode</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.exclude</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>openclSourceAsm</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>profilePython</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>profile_intel_perf_libs</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>show_report</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>spillAnalysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>stackStitching</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stackUnwindLimit</id>
+         <value type="s32_t">8388608</value>
+        </contextValue>
+        <contextValue>
+         <id>stackwalk</id>
+         <value>offline</value>
+        </contextValue>
+        <contextValue>
+         <id>static_instruction_mix</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>support_multi_isa_binaries</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>targetGPU</id>
+         <value>none</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>release</value>
+        </contextValue>
+        <contextValue>
+         <id>type_opt</id>
+         <value>cpu:stack</value>
+        </contextValue>
+       </context>
+      </workload>
+     </release>
+     <tripcounts type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>tripcounts</targetName>
+       <result_directory.path>C:\Users\4885226\source\repos\B&amp;S SOA\B&amp;S SOA\r@@@{at}</result_directory.path>
+       <use_app_dir_as_work_dir type="bool">true</use_app_dir_as_work_dir>
+       <launch_app.app_to_launch>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release\\B&amp;S SOA.exe</launch_app.app_to_launch>
+       <launch_app.app_parameters>100000000</launch_app.app_parameters>
+       <launch_app.working_folder>C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\B&amp;S SOA\</launch_app.working_folder>
+       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14&#13;
+OCL_ICD_FILENAMES=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\x64\\intelocl64.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64_emu.dll;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\x64\\intelocl64.dll&#13;
+INTELFPGAOCLSDKROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\&#13;
+PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\ocloc;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin\\intel64;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\host\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\llvm\\aocl-bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\windows64\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\lib\\oclfpga\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc14;%PATH%&#13;
+OMP_NUM_THREADS=12&#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    &#13;
+    </launch_app.environment>
+       <search_directories>
+        <item>
+         <value>sym=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>sym:rp=C:\\Users\\4885226\\AppData\\Local\\Temp\\SymbolCache</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\bin\\Intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\intel64\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\ia32\\vc_mt</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\intel64_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\ia32_win\\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310\\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Python310</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\\WINDOWS\\System32\\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Git\\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\AppData\\Local\\Microsoft\\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\4885226\\source\\repos\\B&amp;S SOA</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\PuTTY</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>auto_finalize</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>benchmarks-sync</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>cache_config</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>cache_simulation</id>
+         <value>off</value>
+        </contextValue>
+        <contextValue>
+         <id>cachesim_sampling_factor</id>
+         <value>10</value>
+        </contextValue>
+        <contextValue>
+         <id>config</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>count_memory_objects_accesses</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cs_file</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>data_reuse_analysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>data_transfer</id>
+         <value>off</value>
+        </contextValue>
+        <contextValue>
+         <id>data_transfer_analysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>enable_cache_simulation</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>flops_and_masks</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>gpu_conditional_metrics</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>gpu_profiling</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>loops</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mark-up-list</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.exclude</value>
+        </contextValue>
+        <contextValue>
+         <id>page_size</id>
+         <value>4096</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>profilePython</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>profile_jit</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>profile_stripped_binaries</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>show_report</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stackStitching</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stack_access_granularity</id>
+         <value type="s32_t">1048576</value>
+        </contextValue>
+        <contextValue>
+         <id>stacks</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>stl_profiling</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>targetGPU</id>
+         <value>none</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>tripcounts</value>
+        </contextValue>
+        <contextValue>
+         <id>target_device</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>track_memory_objects</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>track_stack_accesses</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>trip_counts</id>
+         <value type="bool">true</value>
+        </contextValue>
+       </context>
+      </workload>
+     </tripcounts>
+    </localhost>
+   </workloads>
+   <selected_workload>
+    <localhost>release</localhost>
+   </selected_workload>
+  </target_settings>
  </All_Configurations-All_Platforms>
+ <contextValues type="bag"/>
 </root>

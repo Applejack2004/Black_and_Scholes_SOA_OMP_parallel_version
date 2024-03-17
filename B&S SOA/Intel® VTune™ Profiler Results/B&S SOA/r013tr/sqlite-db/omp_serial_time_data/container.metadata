@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <bag xmlns:unsignedLong="http://www.w3.org/2001/XMLSchema#unsignedLong">
- <entry path="start_tsc" unsignedLong:size="4">
+ <entry path="start_tsc" unsignedLong:size="5">
   <indexFields>
    <field path="dd_omp_serial"/>
   </indexFields>

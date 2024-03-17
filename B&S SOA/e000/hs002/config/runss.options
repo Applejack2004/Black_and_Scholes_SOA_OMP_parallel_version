@@ -1,0 +1,151 @@
+-r
+C:\Users\4885226\source\repos\B&S SOA\B&S SOA\e000\hs002
+--mrte-mode=auto
+--follow-child
+--return-app-exitcode
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--itt-config=frame,task,event,counter,model
+--stackwalk=offline
+--stack-unwind-limit=8388608
+--mrte-type=java,dotnet,python
+--type=cpu:stack
+--opencl-trace-mode=default
+--search-dir
+sym=C:\\Users\\4885226\\source\\repos\\B&S SOA\\x64\\Release
+--search-dir
+sym:r=C:\\Users\\4885226\\source\\repos\\B&S SOA
+--search-dir
+sym:rp=C:\\Users\\4885226\\AppData\\Local\\Temp\\SymbolCache
+--search-dir
+bin=C:\\Users\\4885226\\source\\repos\\B&S SOA\\x64\\Release
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.1\\windows\\bin\\Intel64
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x86
+--search-dir
+bin=C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64
+--search-dir
+bin=C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319
+--search-dir
+bin=C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\intel64\\vc_mt
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\redist\\ia32\\vc_mt
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\intel64_win\\compiler
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\redist\\ia32_win\\compiler
+--search-dir
+bin=C:\\Program Files\\Python310\\Scripts
+--search-dir
+bin=C:\\Program Files\\Python310
+--search-dir
+bin=C:\\WINDOWS\\system32
+--search-dir
+bin=C:\\WINDOWS
+--search-dir
+bin=C:\\WINDOWS\\System32\\Wbem
+--search-dir
+bin=C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0
+--search-dir
+bin=C:\\WINDOWS\\System32\\OpenSSH
+--search-dir
+bin=C:\\Program Files\\Git\\cmd
+--search-dir
+bin=C:\\Users\\4885226\\AppData\\Local\\Microsoft\\WindowsApps
+--search-dir
+bin=C:\\Users\\4885226\\source\\repos\\B&S SOA
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit
+--search-dir
+bin=C:\\Program Files\\PuTTY
+--search-dir
+bin=C:\\Program Files\\CMake\\bin
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg
+--app-working-dir=C:\\Users\\4885226\\source\\repos\\B&S SOA\\B&S SOA\
+--
+C:\\Users\\4885226\\source\\repos\\B&S SOA\\x64\\Release\\B&S SOA.exe
+100000000

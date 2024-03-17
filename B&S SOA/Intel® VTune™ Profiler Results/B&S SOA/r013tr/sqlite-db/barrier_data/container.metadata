@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <bag xmlns:unsignedLong="http://www.w3.org/2001/XMLSchema#unsignedLong">
- <entry path="start_tsc" unsignedLong:size="6">
+ <entry path="start_tsc" unsignedLong:size="8">
   <indexFields>
    <field path="dd_barrier"/>
    <field path="dd_barrier.process"/>

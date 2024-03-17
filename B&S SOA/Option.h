@@ -1,8 +1,10 @@
 #pragma once
 #include <cmath>
 #include <random>
+#include <vector>
 #include <omp.h>
 #include <iostream>
+#include <riscv-vector.h>
 class Option
 {
 private:

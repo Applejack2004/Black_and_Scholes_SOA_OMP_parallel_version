@@ -1,0 +1,40 @@
+
+=== Start: [2024/02/27 23:48:09] === 
+Analysis started...
+Result file: C:\Users\4885226\source\repos\B&S SOA\B&S SOA\e000\mp000\mp000.advixe 
+Found target process c:\users\4885226\source\repos\b&s soa\x64\release\b&s soa.exe (PID = 26212). Analysis started... 
+Loaded module: c:\users\4885226\source\repos\b&s soa\x64\release\b&s soa.exe. 
+Loaded module: c:\windows\system32\kernelbase.dll. 
+Loaded module: c:\windows\system32\kernel32.dll. 
+Loaded module: c:\windows\system32\ntdll.dll. 
+Loaded module: c:\windows\system32\ucrtbase.dll. 
+Loaded module: c:\windows\system32\msvcp140.dll. 
+Loaded module: c:\program files (x86)\intel\oneapi\compiler\2023.2.1\windows\redist\intel64_win\compiler\libiomp5md.dll. 
+Loaded module: c:\program files (x86)\intel\oneapi\compiler\2023.2.1\windows\redist\intel64_win\compiler\svml_dispmd.dll. 
+Loaded module: c:\windows\system32\vcruntime140.dll. 
+Loaded module: c:\windows\system32\vcruntime140_1.dll. 
+Loaded module: c:\program files (x86)\intel\oneapi\advisor\latest\bin64\runtime\libittnotify.dll. 
+Loaded module: c:\program files (x86)\intel\oneapi\advisor\latest\bin64\pinjitprofiling.dll. 
+Loaded module: dynamiccodebin. 
+Loaded module: c:\windows\system32\kernel.appcore.dll. 
+Loaded module: c:\windows\system32\msvcrt.dll. 
+Unloaded module: c:\users\4885226\source\repos\b&s soa\x64\release\b&s soa.exe. 
+Unloaded module: c:\windows\system32\kernelbase.dll. 
+Unloaded module: c:\windows\system32\kernel32.dll. 
+Unloaded module: c:\windows\system32\ntdll.dll. 
+Unloaded module: c:\windows\system32\ucrtbase.dll. 
+Unloaded module: c:\windows\system32\msvcp140.dll. 
+Unloaded module: c:\program files (x86)\intel\oneapi\compiler\2023.2.1\windows\redist\intel64_win\compiler\libiomp5md.dll. 
+Unloaded module: c:\program files (x86)\intel\oneapi\compiler\2023.2.1\windows\redist\intel64_win\compiler\svml_dispmd.dll. 
+Unloaded module: c:\windows\system32\vcruntime140.dll. 
+Unloaded module: c:\windows\system32\vcruntime140_1.dll. 
+Unloaded module: c:\program files (x86)\intel\oneapi\advisor\latest\bin64\runtime\libittnotify.dll. 
+Unloaded module: c:\program files (x86)\intel\oneapi\advisor\latest\bin64\pinjitprofiling.dll. 
+Unloaded module: c:\windows\system32\kernel.appcore.dll. 
+Unloaded module: c:\windows\system32\msvcrt.dll. 
+Process c:\users\4885226\source\repos\b&s soa\x64\release\b&s soa.exe (PID = 26212) has terminated. 
+Warning: No SITE annotations were encountered, so no stride/alignment data can be reported. 
+Application exit code: 0 
+Result file: C:\Users\4885226\source\repos\B&S SOA\B&S SOA\e000\mp000\mp000.advixe 
+Analysis completed
+=== End: [2024/02/27 23:48:39] === 

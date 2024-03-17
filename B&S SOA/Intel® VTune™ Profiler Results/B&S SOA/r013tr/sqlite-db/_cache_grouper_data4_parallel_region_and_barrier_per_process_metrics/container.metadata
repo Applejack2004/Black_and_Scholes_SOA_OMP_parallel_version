@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <bag xmlns:unsignedLong="http://www.w3.org/2001/XMLSchema#unsignedLong">
- <entry path="grouper" unsignedLong:size="13">
+ <entry path="grouper" unsignedLong:size="17">
   <indexFields>
    <field path="dd_process"/>
    <field path="barrier_data_attr_attribute"/>
