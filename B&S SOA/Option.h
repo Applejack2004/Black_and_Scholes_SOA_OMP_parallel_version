@@ -14,7 +14,7 @@ private:
 public:
 
 	const float Volatility = 0.2f;
-	const float Interest_rest = 0.13f;
+	const float Interest_rest = 0.05f;
 	Option()
 	{
 		N = 10;
@@ -60,6 +60,19 @@ public:
 				S0[i] = 0.0f;
 			}
 		}
+	}
+	void my_datas()
+	{
+		for (int i = 0; i < N; i++)
+		{
+
+			S0[i] = 100.0f;
+			K[i] = 100.0f;
+			T[i] = 3.0f;
+
+
+		}
+
 	}
 	void random_datas()
 	{

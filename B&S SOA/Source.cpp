@@ -30,7 +30,8 @@ int main(int argc, char* argv[])
 		std::cout << "Переменная окружения OMP_NUM_THREADS не установлена" << std::endl;
 	}
 	Option Obj(N);
-	Obj.random_datas();
+	//Obj.random_datas();
+	Obj.my_datas();
 	const std::chrono::time_point<std::chrono::system_clock> t1 = std::chrono::system_clock::now();
 	Obj.Get_option_price();
 	const std::chrono::time_point<std::chrono::system_clock> t2 = std::chrono::system_clock::now();
