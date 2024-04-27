@@ -1,10 +1,15 @@
 #pragma once
 #include <cmath>
 #include <random>
+#pragma once
+#include <cmath>
+#include <random>
 #include <vector>
 #include <omp.h>
 #include <iostream>
 #include <riscv-vector.h>
+#include <fstream>
+#include <string>
 class Option
 {
 private:
@@ -16,7 +21,7 @@ private:
 public:
 
 	const float Volatility = 0.2f;
-	const float Interest_rest = 0.13f;
+	const float Interest_rest = 0.05f;
 	Option()
 	{
 		N = 10;
@@ -26,7 +31,7 @@ public:
 		S0 = new float[N];
 #pragma omp parallel 
 		{
-#pragma omp for simd
+
 			for (int i = 0; i < N; i++)
 			{
 				T[i] = 0.0f;
@@ -53,7 +58,7 @@ public:
 		S0 = new float[N];
 #pragma omp parallel
 		{
-#pragma omp for simd
+
 			for (int i = 0; i < N; i++)
 			{
 				T[i] = 0.0f;
@@ -65,16 +70,16 @@ public:
 	}
 	void random_datas()
 	{
-		
+
 		//std::default_random_engine rd(0);//генератор случайных чисел
 		//std::uniform_real_distribution<float> dist1(10.0f, 100.0f);
 		//std::uniform_real_distribution<float> dist2(5.0f, 30.0f);
-#pragma omp parallel
+//#pragma omp parallel
 		{
 			std::default_random_engine rd(0);//генератор случайных чисел
 			std::uniform_real_distribution<float> dist1(10.0f, 100.0f);
 			std::uniform_real_distribution<float> dist2(5.0f, 30.0f);
-#pragma omp for simd
+			//#pragma omp for simd
 			for (int i = 0; i < N; i++)
 			{
 
@@ -90,23 +95,72 @@ public:
 	float Get_out_price()
 	{
 		float price = 0.0f;
-#pragma omp parallel 
+		//#pragma omp parallel 
 		{
-#pragma omp for simd reduction(+:price)//потоки мешать не будут, каждый поток работает со своей копией price
-		
+			//#pragma omp for simd reduction(+:price)//потоки мешать не будут, каждый поток работает со своей копией price
+
 			for (int i = 0; i < N; i++)
 			{
-             /*  #pragma omp atomic*/
+				/*  #pragma omp atomic*/
 				price += C[i];
 			}
 		}
-	
+
 		return price;
 
 
 
 	}
+	void print()
+	{
+		for (int i = 0; i < N; i++)
+		{
+			std::cout << C[i] << ' ' << T[i] << ' ' << S0[i] << ' ' << K[i] << std::endl;
+		}
 
+	}
+	float Get_S(int i)
+	{
+		return S0[i];
+	}
+	float Get_K(int i)
+	{
+		return K[i];
+	}
+	float Get_T(int i)
+	{
+		return T[i];
+	}
+	void my_datas()
+	{
+		for (int i = 0; i < N; i++)
+		{
+
+			S0[i] = 100.0f;
+			K[i] = 100.0f;
+			T[i] = 3.0f;
+
+
+		}
+
+	}
+
+	float compensated_sum() {
+		float sum = 0.0;
+		float c = 0.0; // Компенсационное значение
+
+		for (int i = 0; i < N; i++) {
+			float y = C[i] - c;  // Коррекция текущего числа
+			float t = sum + y;          // Временная сумма
+			c = (t - sum) - y;           // Коррекция компенсационного значения
+			sum = t;                     // Обновление суммы
+		}
+
+		return sum;
+	}
 
 
 };
+
+
+
