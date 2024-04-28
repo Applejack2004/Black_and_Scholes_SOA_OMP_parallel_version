@@ -117,6 +117,19 @@ public:
 
 
 	}
+	float compensated_sum() {
+		float sum = 0.0;
+		float c = 0.0; // Компенсационное значение
+
+		for (int i = 0; i < N; i++) {
+			float y = C[i] - c;  // Коррекция текущего числа
+			float t = sum + y;          // Временная сумма
+			c = (t - sum) - y;           // Коррекция компенсационного значения
+			sum = t;                     // Обновление суммы
+		}
+
+		return sum;
+	}
 
 
 

@@ -37,7 +37,8 @@ int main(int argc, char* argv[])
 	const std::chrono::time_point<std::chrono::system_clock> t2 = std::chrono::system_clock::now();
 	auto time = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
 	std::cout << " Цена опциона вычислена!" << std::endl;
-	price = Obj.Get_out_price();
+	//price = Obj.Get_out_price();
+	price = Obj.compensated_sum();
 	std::cout << "Справедливая цена опциона = " << price << "$" << std::endl;
 	std::cout << "На вычисление затрачено:" << time << " ms" << std::endl;
 	
